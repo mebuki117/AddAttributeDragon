@@ -1,0 +1,7 @@
+{
+    "values": [
+    "add_attribute_dragon:setups/scoreboardcreate",
+    "add_attribute_dragon:setups/teamcreate",
+    "add_attribute_dragon:utils/dummy_kill"
+    ]
+}

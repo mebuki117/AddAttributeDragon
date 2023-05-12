@@ -1,7 +1,8 @@
 {
     "values": [
     "add_attribute_dragon:setups/scoreboardcreate",
-    "add_attribute_dragon:setups/teamcreate",
-    "add_attribute_dragon:utils/dummy_kill"
+    "add_attribute_dragon:ice/ice_beam/setups/teamcreate",
+    "add_attribute_dragon:utils/dummy_kill",
+    "add_attribute_dragon:ice/frozen_player/setups/teamcreate"
     ]
 }

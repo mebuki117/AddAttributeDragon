@@ -4,6 +4,7 @@
     "add_attribute_dragon:debug/fireball",
     "add_attribute_dragon:ice/ice_beam/place_blocks",
     "add_attribute_dragon:ice/ice_beam/utils",
-    "add_attribute_dragon:ice/ice_beam/dummy_entity"
+    "add_attribute_dragon:ice/ice_beam/dummy_entity",
+    "add_attribute_dragon:ice/frozen_player/tick"
     ]
 }

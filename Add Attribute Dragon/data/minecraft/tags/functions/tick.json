@@ -7,6 +7,7 @@
     "add_attribute_dragon:ice/ice_beam/dummy_entity",
     "add_attribute_dragon:ice/frozen_player/structure",
     "add_attribute_dragon:ice/frozen_player/utils",
-    "add_attribute_dragon:ice/frozen_player/dummy_entity"
+    "add_attribute_dragon:ice/frozen_player/dummy_entity",
+    "add_attribute_dragon:ice/frostbite/main"
     ]
 }

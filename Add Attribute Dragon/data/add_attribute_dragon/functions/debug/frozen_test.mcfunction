@@ -1,20 +1,30 @@
 # structure block rotation
-
 ## south
-execute at @a[y_rotation=-45..45,gamemode=!spectator] unless block ~ ~ ~ minecraft:packed_ice run setblock ~ ~ ~ minecraft:structure_block{mode:"LOAD",name:"frozen_player/frozen_model",posX:-1,posY:-1,posZ:-1,rotation:"NONE"}
-
+execute at @e[y_rotation=-45..45,type=!minecraft:ender_dragon,type=!minecraft:item,type=!minecraft:end_crystal] run setblock ~ ~ ~ minecraft:structure_block{mode:"LOAD",name:"frozen_player/player",rotation:"NONE"}
 ## west
-execute at @a[y_rotation=45..135,gamemode=!spectator] unless block ~ ~ ~ minecraft:packed_ice run setblock ~ ~ ~ minecraft:structure_block{mode:"LOAD",name:"frozen_player/frozen_model",posX:-1,posY:-1,posZ:1,rotation:"COUNTERCLOCKWISE_90"}
-
+execute at @e[y_rotation=45..135,type=!minecraft:ender_dragon,type=!minecraft:item,type=!minecraft:end_crystal] run setblock ~ ~ ~ minecraft:structure_block{mode:"LOAD",name:"frozen_player/player",rotation:"COUNTERCLOCKWISE_90"}
 ## north
-execute at @a[y_rotation=135..225,gamemode=!spectator] unless block ~ ~ ~ minecraft:packed_ice run setblock ~ ~ ~ minecraft:structure_block{mode:"LOAD",name:"frozen_player/frozen_model",posX:1,posY:-1,posZ:1,rotation:"CLOCKWISE_180"}
-
+execute at @e[y_rotation=135..225,type=!minecraft:ender_dragon,type=!minecraft:item,type=!minecraft:end_crystal] run setblock ~ ~ ~ minecraft:structure_block{mode:"LOAD",name:"frozen_player/player",rotation:"CLOCKWISE_180"}
 ## east
-execute at @a[y_rotation=225..315,gamemode=!spectator] unless block ~ ~ ~ minecraft:packed_ice run setblock ~ ~ ~ minecraft:structure_block{mode:"LOAD",name:"frozen_player/frozen_model",posX:1,posY:-1,posZ:-1,rotation:"CLOCKWISE_90"}
+execute at @e[y_rotation=225..315,type=!minecraft:ender_dragon,type=!minecraft:item,type=!minecraft:end_crystal] run setblock ~ ~ ~ minecraft:structure_block{mode:"LOAD",name:"frozen_player/player",rotation:"CLOCKWISE_90"}
 
 # activate structure block
-execute at @a[gamemode=!spectator] unless block ~ ~ ~ minecraft:packed_ice run setblock ~ ~-1 ~ minecraft:redstone_block
+execute at @e[type=!minecraft:ender_dragon,type=!minecraft:item,type=!minecraft:end_crystal] run setblock ~ ~-1 ~ minecraft:redstone_block
 
-# tp then kill
-execute as @e[type=minecraft:armor_stand] at @s if block ~ ~ ~ minecraft:packed_ice run tp @p @s
-execute as @e[type=minecraft:armor_stand] at @s if block ~ ~ ~ minecraft:packed_ice run kill @s
+
+
+execute at @e[limit=1,type=minecraft:armor_stand] run fill ~-1 ~-1 ~-1 ~1 ~2 ~1 minecraft:packed_ice replace minecraft:air
+
+execute at @e[limit=1,type=minecraft:armor_stand] run fill ~1 ~-1 ~1 ~1 ~2 ~1 minecraft:air replace minecraft:packed_ice
+execute at @e[limit=1,type=minecraft:armor_stand] run fill ~1 ~-1 ~-1 ~1 ~2 ~-1 minecraft:air replace minecraft:packed_ice
+execute at @e[limit=1,type=minecraft:armor_stand] run fill ~-1 ~-1 ~1 ~-1 ~2 ~1 minecraft:air replace minecraft:packed_ice
+execute at @e[limit=1,type=minecraft:armor_stand] run fill ~-1 ~-1 ~-1 ~-1 ~2 ~-1 minecraft:air replace minecraft:packed_ice
+
+execute at @e[limit=1,type=minecraft:armor_stand] run setblock ~1 ~1 ~ minecraft:light_blue_stained_glass
+execute at @e[limit=1,type=minecraft:armor_stand] run setblock ~ ~1 ~1 minecraft:light_blue_stained_glass
+execute at @e[limit=1,type=minecraft:armor_stand] run setblock ~-1 ~1 ~ minecraft:light_blue_stained_glass
+execute at @e[limit=1,type=minecraft:armor_stand] run setblock ~ ~1 ~-1 minecraft:light_blue_stained_glass
+
+
+execute at @e[limit=1,type=minecraft:armor_stand] run fill ~ ~ ~ ~ ~1 ~ minecraft:air
+execute at @e[limit=1,type=minecraft:armor_stand] run fill ~ ~-1 ~ ~ ~ ~ minecraft:packed_ice

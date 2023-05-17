@@ -1,8 +1,0 @@
-{
-    "values": [
-    "ice:setups/scoreboardcreate",
-    "ice:funcs/ice_beam/setups/teamcreate",
-    "ice:utils/dummy_kill",
-    "ice:funcs/frozen_player/setups/teamcreate"
-    ]
-}

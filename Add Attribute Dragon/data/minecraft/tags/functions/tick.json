@@ -1,0 +1,14 @@
+{
+    "values": [
+    "ice:debug/dragonphase",
+    "ice:debug/fireball",
+    "ice:funcs/ice_beam/place_blocks",
+    "ice:funcs/ice_beam/utils",
+    "ice:funcs/ice_beam/dummy_entity",
+    "ice:funcs/frozen_player/structure",
+    "ice:funcs/frozen_player/utils",
+    "ice:funcs/frozen_player/dummy_entity",
+    "ice:funcs/frostbite/main",
+    "ice:debug/icecle_test"
+    ]
+}

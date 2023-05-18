@@ -1,0 +1,10 @@
+{
+    "values": [
+    "ice:debug/dragonphase",
+    "ice:debug/fireball",
+    "ice:funcs/ice_beam/tick",
+    "ice:funcs/frozen_player/tick",
+    "ice:funcs/frostbite/main",
+    "ice:debug/icecle_test"
+    ]
+}

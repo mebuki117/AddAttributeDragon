@@ -1,0 +1,60 @@
+{
+    "condition": "minecraft:alternative",
+    "terms": [
+      {
+        "condition": "minecraft:location_check",
+        "offsetY": -1,
+        "predicate": {
+          "block": {
+            "block": "minecraft:respawn_anchor"
+          }
+        }
+      },
+      {
+        "condition": "minecraft:location_check",
+        "offsetY": -1,
+        "predicate": {
+          "block": {
+            "block": "minecraft:netherite_block"
+          }
+        }
+      },
+      {
+        "condition": "minecraft:location_check",
+        "offsetY": -1,
+        "predicate": {
+          "block": {
+            "block": "minecraft:ancient_debris"
+          }
+        }
+      },
+      {
+        "condition": "minecraft:location_check",
+        "offsetY": -1,
+        "predicate": {
+          "block": {
+            "block": "minecraft:crying_obsidian"
+          }
+        }
+      },
+      {
+        "condition": "minecraft:location_check",
+        "offsetY": -1,
+        "predicate": {
+          "block": {
+            "block": "minecraft:obsidian"
+          }
+        }
+      },
+      {
+        "condition": "minecraft:location_check",
+        "offsetY": -1,
+        "predicate": {
+          "block": {
+            "block": "minecraft:bedrock"
+          }
+        }
+      }
+    ]
+  }
+  

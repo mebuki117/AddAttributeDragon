@@ -1,0 +1,9 @@
+{
+    "values": [
+    "ice:funcs/setups/scoreboardcreate",
+    "ice:funcs/ice_beam/setups/teamcreate",
+    "ice:funcs/frozen_player/setups/teamcreate",
+    "ice:funcs/icecle_crash/setups/teamcreate",
+    "ice:funcs/icecle_crash/utils/dummy_kill"
+    ]
+}

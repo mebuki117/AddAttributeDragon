@@ -1,5 +1,6 @@
-### main
-## place ice blocks
+##### team (aad_i_beam) = bat
+
+### place ice blocks
 execute at @e[type=minecraft:dragon_fireball] run setblock ~ ~1 ~ minecraft:packed_ice
 execute at @e[type=minecraft:dragon_fireball] run setblock ~1 ~1 ~ minecraft:packed_ice
 execute at @e[type=minecraft:dragon_fireball] run setblock ~ ~1 ~1 minecraft:packed_ice
@@ -20,8 +21,7 @@ execute at @e[type=minecraft:dragon_fireball] run playsound minecraft:block.glas
 execute at @e[type=minecraft:dragon_fireball] run effect give @e[distance=..4] minecraft:wither 5 1 true
 
 
-### main
-## delete ice blocks
+### delete ice blocks
 execute at @e[team=aad_i_beam,scores={aad_dummy_e=30}] run fill ~-1 ~ ~-1 ~2 ~2 ~2 minecraft:air replace minecraft:packed_ice
 
 

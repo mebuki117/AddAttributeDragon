@@ -6,6 +6,13 @@
           "condition": "minecraft:entity_properties",
           "entity": "this",
           "predicate": {
+            "team": "aad_i_bomb"
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
             "team": "aad_i_icecle"
           }
         },

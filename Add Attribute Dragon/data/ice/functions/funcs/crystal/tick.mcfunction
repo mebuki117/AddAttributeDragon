@@ -1,0 +1,1 @@
+execute at @e[tag=aad_i_crystal,sort=random,limit=1] unless entity @e[type=minecraft:end_crystal,distance=..1] run summon minecraft:end_crystal ~ ~1 ~ {ShowBottom:false}

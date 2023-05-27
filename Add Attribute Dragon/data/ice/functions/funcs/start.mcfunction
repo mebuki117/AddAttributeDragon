@@ -1,0 +1,11 @@
+schedule function general:debug/dragonphase 1t replace
+schedule function general:debug/phase_count 1t replace
+schedule function general:debug/dragonhealth 1t replace
+schedule function general:debug/fireball 1t replace
+schedule function ice:funcs/ice_beam/tick 1t replace
+schedule function ice:funcs/frozen_player/tick 1t replace
+schedule function ice:funcs/frostbite/tick 1t replace
+schedule function ice:funcs/icecle_crash/tick 1t replace
+schedule function ice:funcs/snow_bomb/tick 1t replace
+schedule function ice:funcs/snow_bomb/phase_check 1t replace
+schedule function ice:funcs/start 1t replace

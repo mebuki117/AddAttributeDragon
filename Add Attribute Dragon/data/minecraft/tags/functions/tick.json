@@ -1,14 +1,4 @@
 {
     "values": [
-    "general:debug/dragonphase",
-    "general:debug/phase_count",
-    "general:debug/dragonhealth",
-    "general:debug/fireball",
-    "ice:funcs/ice_beam/tick",
-    "ice:funcs/frozen_player/tick",
-    "ice:funcs/frostbite/tick",
-    "ice:funcs/icecle_crash/tick",
-    "ice:funcs/snow_bomb/tick",
-    "ice:funcs/snow_bomb/phase_check"
     ]
 }

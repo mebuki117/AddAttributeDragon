@@ -1,0 +1,11 @@
+{
+    "values": [
+    "general:setups/load",
+    "ice:funcs/ice_beam/load",
+    "ice:funcs/frozen_player/load",
+    "ice:funcs/icecle_crash/load",
+    "ice:funcs/icecle_crash/utils/dummy_kill",
+    "ice:funcs/snow_bomb/load",
+    "ice:funcs/snow_bomb/utils/dummy_kill"
+    ]
+}

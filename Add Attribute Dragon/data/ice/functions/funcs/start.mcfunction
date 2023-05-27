@@ -8,4 +8,5 @@ schedule function ice:funcs/frostbite/tick 1t replace
 schedule function ice:funcs/icecle_crash/tick 1t replace
 schedule function ice:funcs/snow_bomb/tick 1t replace
 schedule function ice:funcs/snow_bomb/phase_check 1t replace
+schedule function ice:funcs/frozen_bucket/tick 1t replace
 schedule function ice:funcs/start 1t replace

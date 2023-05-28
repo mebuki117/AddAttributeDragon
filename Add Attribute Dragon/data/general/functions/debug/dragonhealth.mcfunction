@@ -1,1 +1,0 @@
-execute as @e[type=minecraft:ender_dragon,limit=1] store result score dragonhealth aad_d_data run data get entity @s Health

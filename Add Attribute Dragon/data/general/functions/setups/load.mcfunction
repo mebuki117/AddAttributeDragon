@@ -12,6 +12,7 @@ scoreboard objectives add aad_death_count dummy
 scoreboard objectives add aad_phase_count dummy
 
 ## dragon health split
+scoreboard players set dragonhealth_20 aad_d_data 20
 scoreboard players set dragonhealth_30 aad_d_data 30
 scoreboard players set dragonhealth_50 aad_d_data 50
 scoreboard players set dragonhealth_100 aad_d_data 100

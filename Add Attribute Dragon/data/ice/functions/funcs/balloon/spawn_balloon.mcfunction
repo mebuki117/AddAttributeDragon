@@ -1,8 +1,8 @@
 ### dummy entity
 ## spawn dummy entity
-execute at @a[limit=1] run summon minecraft:armor_stand ~ 0 ~ {Marker:true,Small:true,Invisible:true,Tags:["aad_i_balloon_d"]}
+execute at @e[type=minecraft:ender_dragon,limit=1] run summon minecraft:armor_stand ~ -5 ~ {Marker:true,Small:true,Invisible:true,Tags:["aad_i_balloon_d"]}
 ## random tp dummy entity
-execute at @a[limit=1] run spreadplayers 0 0 5 16 false @e[tag=aad_i_balloon_d]
+execute at @e[type=minecraft:ender_dragon,limit=1] run spreadplayers 0 0 5 16 false @e[tag=aad_i_balloon_d]
 
 ### balloon dummy entity
 ## spawn dummy slime

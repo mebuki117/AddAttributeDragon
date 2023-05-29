@@ -7,7 +7,7 @@ effect give @e[type=minecraft:slime,tag=aad_i_balloon] minecraft:invisibility 5 
 ### tp
 execute at @e[type=minecraft:slime,tag=aad_i_balloon] run tp @e[type=minecraft:armor_stand,tag=aad_i_balloon,sort=nearest,limit=1] ~ ~-1.4 ~
 
-### get dragon health
+### get a dragon health
 execute as @e[type=minecraft:ender_dragon] store result score @s aad_i_b_d_health run data get entity @s Health
 
 ### oparation hp

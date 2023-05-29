@@ -6,7 +6,7 @@
       "location": {
         "position": {
           "y": {
-            "min": 130,
+            "min": 100,
             "max": 255
           }
         }

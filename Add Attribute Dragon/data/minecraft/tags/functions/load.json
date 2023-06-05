@@ -7,6 +7,7 @@
     "ice:funcs/icecle_crash/utils/dummy_kill",
     "ice:funcs/snow_bomb/load",
     "ice:funcs/snow_bomb/utils/dummy_kill",
-    "ice:funcs/balloon/load"
+    "ice:funcs/balloon/load",
+    "ice:funcs/bat/load"
     ]
 }

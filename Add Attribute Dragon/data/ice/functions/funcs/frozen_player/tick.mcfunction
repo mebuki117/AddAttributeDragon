@@ -41,12 +41,12 @@ execute at @e[team=aad_i_frozen] run fill ~ ~ ~ ~ ~ ~ minecraft:packed_ice
 
 ### utils
 ## particle
-execute as @e[team=aad_i_frozen] at @s if block ~ ~ ~ minecraft:packed_ice run particle minecraft:crit ~ ~ ~ 1.3 1.3 1.3 0 50
+execute as @e[team=aad_i_frozen] at @s run particle minecraft:crit ~ ~ ~ 1.3 1.3 1.3 0 50
 ## sound
-execute as @e[team=aad_i_frozen] at @s if block ~ ~ ~ minecraft:packed_ice run playsound minecraft:block.glass.break master @a ~ ~ ~
+execute as @e[team=aad_i_frozen] at @s run playsound minecraft:block.glass.break master @a ~ ~ ~
 
 ### dummy entity
 ## tp
-execute as @e[team=aad_i_frozen] at @s if block ~ ~ ~ minecraft:packed_ice run tp @e[limit=1,sort=nearest,type=!minecraft:ender_dragon,type=!minecraft:armor_stand] @s
+execute as @e[team=aad_i_frozen] at @s run tp @e[limit=1,sort=nearest,type=!minecraft:ender_dragon,type=!minecraft:armor_stand] @s
 ## kill
-execute as @e[team=aad_i_frozen] at @s if block ~ ~ ~ minecraft:packed_ice run kill @s
+execute as @e[team=aad_i_frozen] at @s run kill @s

@@ -1,7 +1,7 @@
 ##### team (aad_i_icecle) = player and armor_stand
 ##### tag (aad_i_death_c) = stray
 
-### random spwan
+### random spawn
 ## get a chance tag
 execute as @a[gamemode=!creative,gamemode=!spectator] at @s if entity @e[type=minecraft:ender_dragon,distance=..96] if predicate ice:icecle_crash/chance run tag @s add aad_i_icecle
 ## spawn armor_stand
@@ -30,8 +30,8 @@ execute at @e[team=aad_i_icecle] run fill ~-1 ~7 ~-1 ~1 ~10 ~1 minecraft:air rep
 execute as @e[team=aad_i_icecle,nbt={OnGround:true}] run schedule function ice:funcs/icecle_crash/stopper 3t append
 
 ### utils
-## damage
-execute at @e[team=aad_i_icecle,tag=!aad_i_death_c] run effect give @e[distance=..3] minecraft:instant_damage 1 1 true
+## slowness
+execute at @e[team=aad_i_icecle,tag=!aad_i_death_c] run effect give @e[distance=..3] minecraft:slowness 2 0 true
 ## stray death count
 scoreboard players add @e[type=minecraft:stray,tag=aad_i_death_c] aad_death_count 1
 # death

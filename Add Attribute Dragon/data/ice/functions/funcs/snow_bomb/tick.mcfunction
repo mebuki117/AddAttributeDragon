@@ -3,7 +3,7 @@
 ##### team (aad_i_bomb) = armor_stand
 
 ### if close then summon a tnt
-execute at @e[type=!minecraft:ender_dragon,predicate=!ice:dummy_teams] if entity @e[team=aad_i_bomb,distance=..1] run summon minecraft:tnt ~ ~ ~
+execute at @e[type=!minecraft:ender_dragon,predicate=!ice:dummy_teams,gamemode=!creative,gamemode=!spectator] if entity @e[team=aad_i_bomb,distance=..1] run summon minecraft:tnt ~ ~ ~
 
 ### kill a bomb
-execute as @e[type=!minecraft:ender_dragon,predicate=!ice:dummy_teams] at @s if entity @e[team=aad_i_bomb,distance=..1] run kill @e[team=aad_i_bomb,distance=..1]
+execute as @e[type=!minecraft:ender_dragon,predicate=!ice:dummy_teams,gamemode=!creative,gamemode=!spectator] at @s if entity @e[team=aad_i_bomb,distance=..1] run kill @e[team=aad_i_bomb,distance=..1]

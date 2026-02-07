@@ -3,3 +3,6 @@ execute at @e[type=minecraft:ender_dragon,limit=1] run summon minecraft:armor_st
 
 ### random_tp
 schedule function ice:funcs/snow_bomb/random_tp 2t append
+
+### increase snow bomb count
+scoreboard players add add_sb_count aad_sb_data 1

@@ -2,7 +2,7 @@
 
 
 ### random spwan
-execute at @a if predicate ice:icecle_crash/chance if entity @e[type=minecraft:ender_dragon,distance=..96] run summon minecraft:armor_stand ~ 130 ~ {Invisible:1b,Small:1,Team:"aad_i_icecle"}
+execute at @a if predicate ice:icecle_crash/chance if entity @e[type=minecraft:ender_dragon,distance=..96] run summon minecraft:armor_stand ~ 130 ~ {Invisible:1b,Small:1b,Team:"aad_i_icecle"}
 
 
 ### i hate collisionrule

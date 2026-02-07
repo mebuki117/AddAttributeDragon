@@ -1,2 +1,1 @@
-execute if entity @e[type=minecraft:ender_dragon,nbt={DragonPhase:0},limit=1] if score dragonhealth aad_d_data < dragonhealth_120 aad_d_data run schedule function ice:funcs/balloon/spawn_balloon 1s replace
 execute if entity @e[type=minecraft:ender_dragon,nbt={DragonPhase:2},limit=1] if score dragonhealth aad_d_data < dragonhealth_120 aad_d_data run schedule function ice:funcs/balloon/spawn_balloon 1s replace

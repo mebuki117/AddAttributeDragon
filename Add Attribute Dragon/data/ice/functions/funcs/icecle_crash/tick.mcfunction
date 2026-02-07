@@ -30,10 +30,11 @@ execute at @e[team=aad_i_icecle] run fill ~-1 ~7 ~-1 ~1 ~10 ~1 minecraft:air rep
 execute as @e[team=aad_i_icecle,nbt={OnGround:true}] run schedule function ice:funcs/icecle_crash/stopper 3t append
 
 ### utils
-## slowness
-execute at @e[team=aad_i_icecle,tag=!aad_i_death_c] run effect give @e[distance=..3] minecraft:slowness 2 0 true
+## damage and slowness
+execute at @e[team=aad_i_icecle,tag=!aad_i_death_c] run effect give @e[distance=..3] minecraft:wither 2 3 true
+execute at @e[team=aad_i_icecle,tag=!aad_i_death_c] run effect give @e[distance=..3] minecraft:slowness 5 3 true
 ## stray death count
 scoreboard players add @e[type=minecraft:stray,tag=aad_i_death_c] aad_death_count 1
 # death
-execute as @e[type=minecraft:stray,scores={aad_death_count=200..},tag=aad_i_death_c] run tp @s ~ -10 ~  
+execute as @e[type=minecraft:stray,scores={aad_death_count=200..},tag=aad_i_death_c] run tp @s ~ -10 ~
 execute as @e[type=minecraft:stray,scores={aad_death_count=210..},tag=aad_i_death_c] run kill @s

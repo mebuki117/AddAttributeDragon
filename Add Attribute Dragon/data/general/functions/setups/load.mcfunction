@@ -17,3 +17,10 @@ scoreboard players set dragonhealth_30 aad_d_data 30
 scoreboard players set dragonhealth_50 aad_d_data 50
 scoreboard players set dragonhealth_100 aad_d_data 100
 scoreboard players set dragonhealth_120 aad_d_data 120
+
+## snow bomb count
+scoreboard objectives add aad_sb_data dummy
+scoreboard players set add_sb_count aad_sb_data 0
+
+## balloon hp
+scoreboard objectives add aad_i_balloon_hp dummy
